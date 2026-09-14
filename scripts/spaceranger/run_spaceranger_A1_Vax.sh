@@ -10,6 +10,8 @@
 #$ -l mem_per_core=8G
 #$ -l h_rt=48:00:00
 
+set -euo pipefail
+
 
 # ========================================
 # Space Ranger installation
