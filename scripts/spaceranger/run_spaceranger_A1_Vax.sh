@@ -45,9 +45,7 @@ SLIDE="H1-96R39RW"
 
 CYTAIMAGE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/Mazzilli_PID_2026_04_Jones_Lab/CytAssist Run 2_6-5-2026/CAVG10202_2026-06-05_13-58-49_2026-04-6-5-2026_H1-96R39RW_A1_Vax.tif"
 
-# add later if needed
-# using argument --image="${IMAGE}"
-# IMAGE="/path/to/images/H_and_E_Image_A1.jpg"
+IMAGE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/Mazzilli_PID_2026_04_Jones_Lab/CytAssist Run 2_6-5-2026/HighResHE/Vax TDLN/Scan2/Vax TDLN_Scan2.qptiff"
 
 OUTPUT_DIR="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/spaceranger"
 
@@ -68,6 +66,7 @@ spaceranger count \
     --slide="${SLIDE}" \
     --area="${AREA}" \
     --cytaimage="${CYTAIMAGE}" \
+    --image="${IMAGE}" \
     --create-bam=false \
     --disable-cell-annotation \
     --localcores="${NSLOTS}" \
