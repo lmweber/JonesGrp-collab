@@ -5,7 +5,7 @@
 # ========================================
 
 #$ -P weberlab
-#$ -N spaceranger_A1
+#$ -N spcrng_A1
 #$ -pe omp 8
 #$ -l mem_per_core=8G
 #$ -l h_rt=48:00:00
@@ -27,7 +27,7 @@ spaceranger --version
 
 AREA="A1"
 
-SAMPLE="A1_Vax"
+SAMPLE="2026-04_A1_Vax"
 
 # Name for the Space Ranger output directory
 RUN_ID="VisiumHD_A1"
