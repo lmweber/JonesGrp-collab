@@ -69,5 +69,6 @@ spaceranger count \
     --area="${AREA}" \
     --cytaimage="${CYTAIMAGE}" \
     --create-bam=false \
+    --disable-cell-annotation \
     --localcores="${NSLOTS}" \
     --localmem=64
