@@ -5,7 +5,7 @@
 # ========================================
 
 #$ -P weberlab
-#$ -N spcrng_A1_Vax
+#$ -N spcrng_D1_D42
 #$ -pe omp 8
 #$ -l mem_per_core=8G
 #$ -l h_rt=48:00:00
@@ -27,27 +27,27 @@ spaceranger --version
 # Space Ranger settings and paths
 # ========================================
 
-AREA="A1"
+AREA="D1"
 
-SAMPLE="2026-04_A1_Vax"
+SAMPLE="2026-04_D1_D42"
 
 # Name for the Space Ranger output directory
-RUN_ID="VisiumHD_A1_Vax"
+RUN_ID="VisiumHD_D1_D42"
 
-FASTQ_DIR="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/samples/A1_Vax/fastq"
+FASTQ_DIR="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/samples/D1_D42/fastq"
 
 TRANSCRIPTOME="/projectnb/jonesgrp/references/refdata-gex-mm10-2020-A"
 
 PROBE_SET="$HOME/software/spaceranger-4.1.0/probe_sets/Visium_Mouse_Transcriptome_Probe_Set_v2.0_mm10-2020-A.csv"
 
 # not needed if spaceranger has internet access
-SLIDEFILE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/slidefiles/H1-96R39RW.vlf"
+SLIDEFILE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/slidefiles/H1-3M26FH4.vlf"
 
-SLIDE="H1-96R39RW"
+SLIDE="H1-3M26FH4"
 
-CYTAIMAGE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/Mazzilli_PID_2026_04_Jones_Lab/CytAssist Run 2_6-5-2026/CAVG10202_2026-06-05_13-58-49_2026-04-6-5-2026_H1-96R39RW_A1_Vax.tif"
+CYTAIMAGE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/Mazzilli_PID_2026_04_Jones_Lab/CyAssist_run1_04302026/CAVG10202_2026-05-01_14-25-47_2026-04-2026-5-1_H1-3M26FH4_D1_D42.tif"
 
-IMAGE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/Mazzilli_PID_2026_04_Jones_Lab/CytAssist Run 2_6-5-2026/HighResHE/Vax TDLN/Scan2/Vax TDLN_Scan2.qptiff"
+IMAGE="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/Mazzilli_PID_2026_04_Jones_Lab/CyAssist_run1_04302026/HighRes_H&E/D42/Scan1/D42_Scan1.qptiff"
 
 OUTPUT_DIR="/projectnb/jonesgrp/2026_06_25_JonesD_Visium/spaceranger"
 
