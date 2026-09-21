@@ -39,7 +39,8 @@ library(magick)
 # Workaround for arrow open_dataset() / sf conflict in VisiumIO
 # -------------------------------------------------------------------------
 
-source("fix_arrow_sf_VisiumIO.R")
+# run from bash script instead
+# source("fix_arrow_sf_VisiumIO.R")
 
 
 # -------------------------------------------------------------------------

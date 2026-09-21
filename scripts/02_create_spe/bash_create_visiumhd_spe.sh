@@ -30,6 +30,7 @@ SPACERANGER_DIR="$PROJECT_DIR/spaceranger"
 SPE_DIR="$PROJECT_DIR/spe"
 
 R_SCRIPT="$SCRIPT_DIR/create_visiumhd_spe.R"
+WORKAROUND_R_SCRIPT="$SCRIPT_DIR/fix_arrow_sf_VisiumIO.R"
 
 # -------------------------------------------------------------------------
 # R installation
@@ -46,7 +47,14 @@ mkdir -p "$SPE_DIR"
 
 "$R_BIN/Rscript" --version
 
+export R_SCRIPT
+export WORKAROUND_R_SCRIPT
+
 # run from project root directory
 cd "$PROJECT_DIR"
 
-"$R_BIN/Rscript" "$R_SCRIPT"
+"$R_BIN/Rscript" -e '
+library(VisiumIO)
+source(Sys.getenv("WORKAROUND_R_SCRIPT"))
+source(Sys.getenv("R_SCRIPT"))
+'
