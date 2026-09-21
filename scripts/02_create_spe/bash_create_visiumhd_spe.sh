@@ -13,6 +13,13 @@ set -euo pipefail
 module purge
 module load gcc
 
+# modules needed for 'sf' and related packages
+module load udunits
+module load gdal/3.11.5
+module load proj/9.7.1
+module load sqlite3/3.44.2
+module load geos
+
 # -------------------------------------------------------------------------
 # Project directories
 # -------------------------------------------------------------------------
