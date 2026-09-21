@@ -39,7 +39,7 @@ library(magick)
 # Workaround for arrow open_dataset() / sf conflict in VisiumIO
 # -------------------------------------------------------------------------
 
-source("fix_VisiumIO_arrow_sf.R")
+source("fix_arrow_sf_VisiumIO.R")
 
 
 # -------------------------------------------------------------------------
