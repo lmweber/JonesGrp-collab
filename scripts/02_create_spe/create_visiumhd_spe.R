@@ -12,7 +12,8 @@
 #
 # Each Space Ranger run directory is expected to contain an "outs/" directory.
 #
-# This script creates 12 independent .rds files:
+# This script creates 16 independent .rds files:
+#   - 4 samples x 2 um bins
 #   - 4 samples x 8 um bins
 #   - 4 samples x 16 um bins
 #   - 4 samples x Space Ranger segmented cells
@@ -59,6 +60,7 @@ dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
 
 # Visium HD bin sizes to import
 bin_sizes <- c(
+  `2um`  = "002",
   `8um`  = "008",
   `16um` = "016"
 )
@@ -231,7 +233,7 @@ for (sample_id in names(sample_dirs)) {
   
   
   # ---------------------------------------------------------------------
-  # 8 um and 16 um binned outputs
+  # 2 um, 8 um, and 16 um binned outputs
   # ---------------------------------------------------------------------
   
   for (resolution in names(bin_sizes)) {
